@@ -3,7 +3,155 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>HTML Project 1 Checkpoint</title>
+		<title>My Portfolio</title>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home">
+				<h2>Welcome to My Portfolio</h2>
+				<p>This is the home section.</p>
+
+				<div class="media-container">
+					<video width="560" height="315" controls>
+						<source src="videos/my_intro_video.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+
+					<audio controls>
+						<source src="audio/my_background_music.mp3" type="audio/mpeg" />
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</section>
+
+			<section id="about">
+				<h2>About Me</h2>
+				<p>
+					A passionate fullstack web developer with a focus on creating user-friendly and efficient
+					web applications. I have experience in Frontend technologies like HTML, CSS, and
+					JavaScript, and also experience Backend technologies like Node.js and ASP.Net. And Iam
+					always eager to learn new things.
+				</p>
+
+				<h3>Skills</h3>
+				<table class="skill-table">
+					<thead>
+						<tr>
+							<th>Category</th>
+							<th>Skill</th>
+							<th>Proficiency</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Frontend</td>
+							<td>HTML</td>
+							<td>Expert</td>
+						</tr>
+						<tr>
+							<td>Frontend</td>
+							<td>CSS</td>
+							<td>Advanced</td>
+						</tr>
+						<tr>
+							<td>Frontend</td>
+							<td>JavaScript</td>
+							<td>Intermediate</td>
+						</tr>
+						<tr>
+							<td>Backend</td>
+							<td>Node.js</td>
+							<td>Intermediate</td>
+						</tr>
+						<tr>
+							<td>Backend</td>
+							<td>Dotnet</td>
+							<td>Beginner</td>
+						</tr>
+						<tr>
+							<td>Database</td>
+							<td>SQL</td>
+							<td>Intermediate</td>
+						</tr>
+						<tr>
+							<td>Database</td>
+							<td>Mongo DB</td>
+							<td>Intermediate</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Hobbies</h3>
+				<ul>
+					<li>Sports</li>
+					<li>Eating</li>
+					<li>Making friends</li>
+					<li>Having fun</li>
+					<li>Travelling</li>
+					<li>Reading science fiction</li>
+				</ul>
+			</section>
+
+			<section id="work">
+				<h2>My Work</h2>
+				<p>Here are some of the projects I've worked on:</p>
+				<ul class="project-list">
+					<li><a href="projects/project1.html">Project 1: Website Redesign</a></li>
+					<li><a href="projects/project2.html">Project 2: E-commerce Platform</a></li>
+					<li>Project 3: Mobile App Concept</li>
+				</ul>
+			</section>
+
+			<section id="resume">
+				<h2>Resume</h2>
+				<p>You can download my resume <a href="documents/my_resume.pdf">here</a> Here.</p>
+				<h3>Experience</h3>
+				<dl>
+					<dt>Web Developer at NiceTech Solutions Inc.</dt>
+					<dd>2022 - Present</dd>
+					<dd>Developed and maintained web applications using various technologies.</dd>
+
+					<dt>Fulldtack software developer intern at GoMyCode</dt>
+					<dd>2021 - 2022</dd>
+					<dd>Assisted instructors in teaching students.</dd>
+				</dl>
+			</section>
+
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<p>Feel free to reach out for collaborations or inquiries!</p>
+				<form action="#" method="POST">
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+					<div>
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button type="submit">Send Message</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; Khalid 2025 My Portfolio. All rights reserved.</p>
+		</footer>
+	</body>
 </html>
